@@ -4,8 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
 import 'package:abg_utils/abg_utils.dart';
 import 'package:flutter/foundation.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
+//import 'package:google_sign_in/google_sign_in.dart';
+//import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:uuid/uuid.dart';
 import 'dart:math';
 import '../../abg_utils.dart';
@@ -138,7 +138,7 @@ Future<String?> changeInfo(String name, String email, String phone) async{
   }
   return null;
 }
-
+/*
 Future<String?> googleLogin() async {
 
   localSettings.saveLogin("", "", "");
@@ -178,7 +178,7 @@ Future<String?> googleLogin() async {
   }
   return null;
 }
-
+*/
 String generateNonce([int length = 32]) {
   final charset =
       '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._';
@@ -193,7 +193,7 @@ String generateNonce([int length = 32]) {
 //   final digest = sha256.convert(bytes);
 //   return digest.toString();
 // }
-
+/*
 Future<String?> appleLogin() async {
   AuthorizationCredentialAppleID? credential;
 
@@ -264,7 +264,7 @@ logout() async {
   localSettings.saveLogin("", "", "");
 
 }
-
+*/
 // stringUserDontCreate - strings.get(182); /// User don't create
 Future<String?> register(String email, String pass, String name, String stringUserDontCreate) async {
   try {
