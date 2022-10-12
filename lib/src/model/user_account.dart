@@ -244,7 +244,7 @@ Future<String?> appleLogin() async {
   }
   return null;
 }
-
+*/
 logout() async {
   addPoint("info", error: "logout");
 
@@ -264,7 +264,7 @@ logout() async {
   localSettings.saveLogin("", "", "");
 
 }
-*/
+
 // stringUserDontCreate - strings.get(182); /// User don't create
 Future<String?> register(String email, String pass, String name, String stringUserDontCreate) async {
   try {
